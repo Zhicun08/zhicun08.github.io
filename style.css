@@ -27,7 +27,7 @@ a:hover{
 	font-family: 'Kanit', sans-serif;
 	font-size: 120px;
     color:#505050;
-    margin-top: 15%;
+    margin-top: 10%;
 	margin-left: 70px;
 	line-height: 30px;
     /* text-align: center; */
@@ -73,7 +73,7 @@ a:hover{
 	border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
 	cursor: pointer;
 	user-select: none;
-	width: 200px;
+	width: 165spx;
 	height: 20px;
   }
   
@@ -99,7 +99,7 @@ a:hover{
   
   .select-items div:hover, .same-as-selected {
 	background-color: rgba(0, 0, 0, 0.1);
-	width: 200px;
+	width: 165px;
   }
 
 /* .line{
@@ -165,15 +165,25 @@ a:hover{
 }
 
 .container {
-	margin-top: 200px;
+	margin-top: 180px;
     display: grid;
     grid-gap: 5px;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-template-rows: repeat(2, 100px);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 270px));
+    grid-template-rows: repeat(auto-fit,1fr);
 }
 
 .container > div > img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.div-hide{
+	display: none;
+}
+
+.div-hide > img{
+	width: 100%;
     height: 100%;
     object-fit: cover;
 }
